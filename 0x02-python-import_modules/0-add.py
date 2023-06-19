@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import add_0 as adding
+from add_0 import add
 a = 1
 b = 2
-print(f" {a} + {b} = {adding.add(a, b)}")
+print(f" {a} + {b} = {add(a, b)\n}")
