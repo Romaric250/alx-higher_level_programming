@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-class Square:
-    """
-    This class defines a square.
+"""Defines a square """
 
-    Attributes:
-        None
-    """
+
+class Square:
+    """Does nothing"""
     pass
