@@ -8,7 +8,7 @@ class Square:
     def __init__(self, size=0):
         """instantiate the class
         Args:
-            size: the size of the square 
+            size: the size of the square
         Raises:
             TypeError: called when size is not int
             ValueError: caled if size is < 0
