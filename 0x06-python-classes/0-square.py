@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
 class Square:
     """
-    this class defines a sqaure.
-    Attribute: None
+    This class defines a square.
+
+    Attributes:
+        None
     """
     pass
-
