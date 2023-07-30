@@ -3,12 +3,12 @@
 
 
 class Rectangle:
-    """represents a rectangle"""
+    """this is a rectangle"""
     number_of_instances = 0
     symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initializing the rectangle class
+        """Initializing this rectangle class
         Args:
             width: represents the width of the rectangle
             height: represents the height of the rectangle
@@ -63,13 +63,13 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
         rectangle = ""
-        for col in range(self.__height):
+        for column in range(self.__height):
             for row in range(self.__width):
                 try:
                     rectangle += str(self.symbol)
                 except Exception:
                     rectangle += type(self).symbol
-            if col < self.__height - 1:
+            if column < self.__height - 1:
                 rectangle += "\n"
         return (rectangle)
 
@@ -81,3 +81,14 @@ class Rectangle:
         """prints a message for every object that is deleted"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        else:
+            return rect_2
