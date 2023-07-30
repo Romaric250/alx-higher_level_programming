@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-This module contain a function that prints a square
+This mod contain a fun that prints a square
 
 """
 
