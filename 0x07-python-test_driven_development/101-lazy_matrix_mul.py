@@ -2,14 +2,14 @@
 
 """This mod contains a function that multiplies two matrices lazilly hmm"""
 
-import numpy as np
+import numpy as num
 
 
-def lazy_matrix_mul(ma, mb):
+def lazy_matrix_mul(m_a, m_b):
     """Return the multiplication of two matrices it did.
     Args:
-        ma (list of lists of ints/floats): The first matrix.
-        mb (list of lists of ints/floats): The second matrix.
+        m_a (list of lists of ints/floats): The first matrix.
+        m_b (list of lists of ints/floats): The second matrix.
     """
 
-    return (np.matmul(ma, mb))
+    return (num.matmul(m_a, m_b))
