@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contains a rectangle class"""
+"""This contains a rectangle class"""
 
 from models.base import Base
 
@@ -36,7 +36,7 @@ class Rectangle(Base):
         """Gets the value for y"""
         return self.__y
 
-    # List of setter functions
+    
     @width.setter
     def width(self, value):
         """Sets the value for width"""
@@ -97,12 +97,12 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """Defines a format for the string representation of the class"""
+        """ the string representation of the class"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
 {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
-        """Assigns an argument to each attribute"""
+        """an argument to each attribute"""
 
         if args and len(args) != 0:
             a = 0
@@ -139,7 +139,7 @@ class Rectangle(Base):
                     self.y = v
 
     def to_dictionary(self):
-        """Returns the dictionary representation of a Rectangle"""
+        """Returns representation of a Rectangle"""
 
         obj_dictionary = {'id': self.id, 'width': self.__width,
                           'height': self.__height, 'x': self.__x,
