@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 import {argv} from "node:process";
 function factorial(n) {
   if (Number.isNaN(n)) {

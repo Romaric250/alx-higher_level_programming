@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 import {argv} from 'node:process';
 function add(a, b) {
   return a + b;
