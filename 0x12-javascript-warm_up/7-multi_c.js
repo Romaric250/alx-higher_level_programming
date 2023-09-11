@@ -1,12 +1,12 @@
 #!/usr/bin/node
 import {argv} from 'node:process';
-let arg = process.argv[2];
-if (Number.isInteger(Number(arg))) {
-while (parseInt(arg) > 0){
-	console.log('C is fun');
-	arg = arg - 1;
+const arg = process.argv[2];
 
-}}
-else {
-    console.log("Missing number of occurences");
+if (Number.isInteger(Number(arg))) {
+  const x = parseInt(arg);
+  for (let i = 0; i < x; i++) {
+    console.log("C is fun");
+  }
+} else {
+  console.log("Missing number of occurrences");
 }
